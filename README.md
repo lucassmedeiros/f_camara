@@ -1,6 +1,6 @@
 # Instale as dependências
   $ yarn install
  
-  # Inicie a aplicação web
+  # Inicie a aplicação 
 
   $ yarn start

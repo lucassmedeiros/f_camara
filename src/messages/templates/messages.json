@@ -1,0 +1,15 @@
+{
+  "password": "Senha",
+  "userName": "Nome",
+  "login": "Login",
+  "loading": "Carregando",
+  "formRequired": "Campo obrigatório",
+  "name": "Nome",
+  "lastName": "Sobrenome",
+  "gender": "Sexo",
+  "signOut": "Deslogar",
+  "vr": "VR Benefícios Refeição",
+  "welcome": "Seja bem vindo!",
+  "invalidNameOrPassword": "Nome ou senha inválidos, tente novamente.",
+  "somethingWentWrong": "Ops, algo deu errado. Tente novamente."
+}

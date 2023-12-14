@@ -1,4 +1,3 @@
-import * as React from "react";
 import { Button } from "../../components/button/index";
 import { useAuth } from "../../context/AuthContext";
 import { message } from "../../messages/index";

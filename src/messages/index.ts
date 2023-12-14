@@ -1,14 +1,14 @@
-import messages from './templates/messages.json'
+import messages from "./templates/messages.json";
 
 enum ETemplates {
-  messages = 'messages'
+  messages = "messages",
 }
 
 const templates = {
-  messages
-}
+  messages,
+};
 
-export type IFunctionMessage = (value: string) => string
+export type IFunctionMessage = (value: string) => string;
 
 /**
  *
@@ -16,14 +16,14 @@ export type IFunctionMessage = (value: string) => string
  * @returns {string} return the string matched with the path passed
  */
 export const message: IFunctionMessage = (value: string): string => {
-  const paths = value.split('.')
+  const paths: any = value.split(".");
 
-  if (!ETemplates[paths[0]]) return ''
+  if (!ETemplates[paths[0] as ETemplates]) return "";
 
   const message = paths.reduce(
-    (template, key) => template[key],
+    (template: any, key: number) => template[key],
     templates
-  ) as unknown as string
+  ) as unknown as string;
 
-  return message ?? ''
-}
+  return message ?? "";
+};

@@ -1,11 +1,12 @@
 import { Container, Input, Label } from "./styles";
 
-type TextInputProps = {
+interface TextInputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   label?: string;
-  errorInput?: string;
-};
+  readonly Tag?: string;
+  readonly key?: string;
+}
 
-export const TextInput = ({ label, errorInput, ...rest }: TextInputProps) => {
+export const TextInput = ({ label, ...rest }: TextInputProps) => {
   return (
     <Container>
       {label && <Label>{label}</Label>}

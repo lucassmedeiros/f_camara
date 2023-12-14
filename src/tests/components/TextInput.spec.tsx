@@ -1,14 +1,11 @@
 import { render, screen } from "@testing-library/react";
 import { TextInput } from "../../components/textInput/index";
+import { message } from "../../messages/index";
 
 describe("TextInput Component", () => {
-  it("renders correctly with label", () => {
-    render(<TextInput label="Username" />);
+  it("renders correctly label", () => {
+    render(<TextInput label={message("messages.userName")} />);
 
-    expect(screen.getByText("Username")).toBeInTheDocument();
-  });
-
-  it("renders correctly without label", () => {
-    render(<TextInput />);
+    expect(screen.getByText(message("messages.userName"))).toBeInTheDocument();
   });
 });

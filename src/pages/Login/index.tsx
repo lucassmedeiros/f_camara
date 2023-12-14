@@ -9,12 +9,11 @@ import {
   Form,
   FormContainer,
   FormTitle,
-  TitleLabel,
 } from "./styles";
 import { useLogin } from "./useLogin";
 
 export const Login = () => {
-  const { onSubmit, handleSubmit, control, errors } = useLogin();
+  const { onSubmit, handleSubmit, control } = useLogin();
 
   const { isAuthLoading } = useAuth();
   return (
